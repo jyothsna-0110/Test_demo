@@ -10,3 +10,4 @@ c=a/b;
 document.write("div"+c);
 c=a%b;
 document.write("mod"+c);
+console.log("hello!");
