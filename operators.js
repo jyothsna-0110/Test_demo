@@ -1,0 +1,12 @@
+var a=9;
+var b=3;
+var c=a+b;
+document.write("add"+c);
+c=a-b;
+document.write("sub"+c);
+c=a*b;
+document.write("mul"+c);
+c=a/b;
+document.write("div"+c);
+c=a%b;
+document.write("mod"+c);
