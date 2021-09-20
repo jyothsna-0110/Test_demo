@@ -92,6 +92,25 @@ else{
 
 //coding challenge 4
 
-let bill=430;
-let tip;
-console.log(`The bill is ${bill}, the tip is ${tip=bill<=300 && tip>=50?bill*(15/100):bill*(20/100)} and total bill is ${bill+tip}  `);
+// let bill=430;
+// let tip;
+// console.log(`The bill is ${bill}, the tip is ${tip=bill<=300 && tip>=50?bill*(15/100):bill*(20/100)} and total bill is ${bill+tip}  `);
+
+//fundamentals part2
+//coding challenge 1
+const average=(a,b,c)=>(a+b+c)/3;
+    const averageDolphins=(average(85,54,41));  
+    const averageKoalas=(average(23,34,27));  
+
+
+function checkWinner(avgDolphins,avgKoalas){
+    if(avgDolphins >= 2 * avgKoalas){
+        console.log(`Dolphins win the trophy (${avgDolphins} vs. ${avgKoalas})`);
+    } else if(avgKoalas >= 2*avgDolphins) {
+        console.log(`Koalas win the trophy(${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log('No one wins the trophy');
+    }
+
+}
+checkWinner(averageDolphins,averageKoalas);

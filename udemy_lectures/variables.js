@@ -77,5 +77,59 @@
 //                             console.log('Day is invalid');
 // }
 
-let age=20;
-console.log(`I like to drink ${age>=18?'wine':'Water'}`);
+// let age=20;
+// console.log(`I like to drink ${age>=18?'wine':'Water'}`);
+
+//functions
+// function name(firstName,lastName){
+//     const myname=`My Name is ${firstName} ${lastName}.`
+//   return myname;
+// }
+// const fullName=name('Jyothsna','Chennuri');
+// console.log(fullName);
+
+// console.log(name('Jyothsna','Chennuri'));
+//const age1=calcage(1998);//it is possible before initialization function we can call
+function calcage(birthYear) {
+    return 2020-birthYear;
+}
+const age1=calcage(1998);
+console.log(age1);
+
+//const age2=calcage2(1998); it is not possible before initialization
+const calcage2=function(birthYear){
+    return 2022-birthYear;
+}
+
+const age2=calcage2(1998);
+console.log(age2);
+
+
+//Arrow Fuctions
+
+const calcage3= birthYear=> 2021-birthYear;
+const age3=calcage3(1998);
+console.log(age3);
+
+
+const retirementYears=birthyear=>{
+    const age=2021-birthyear;
+    const retire=65-age;
+    return (`You will retire after ${retire} years`);
+}
+console.log(retirementYears(1998));
+
+// function calling in other function
+
+function cutFruitPieces(fruits){
+    return fruits * 3;
+}
+
+function fruitjuiceprocess(mangoes,oranges){
+    const mangoPieces=cutFruitPieces(mangoes);
+    const orangePieces=cutFruitPieces(oranges);
+
+    const juice=`Juice with ${mangoPieces} piece of mango and ${orangePieces} pieces of orange.`
+    return juice;
+}
+console.log(fruitjuiceprocess(4,5));
