@@ -68,3 +68,6 @@ else{
 }
 
 
+//ternary operators
+console.log(k<l ? true:false);
+
