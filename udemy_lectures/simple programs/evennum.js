@@ -1,4 +1,4 @@
-// printing the even numbers upto give range
+// printing the even and odd numbers upto give range
 
 let i=2, range;
 range = Number(prompt('Enter Range'));
