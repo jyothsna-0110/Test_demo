@@ -98,19 +98,32 @@ else{
 
 //fundamentals part2
 //coding challenge 1
-const average=(a,b,c)=>(a+b+c)/3;
-    const averageDolphins=(average(85,54,41));  
-    const averageKoalas=(average(23,34,27));  
+// const average=(a,b,c)=>(a+b+c)/3;
+//     const averageDolphins=(average(85,54,41));  
+//     const averageKoalas=(average(23,34,27));  
 
 
-function checkWinner(avgDolphins,avgKoalas){
-    if(avgDolphins >= 2 * avgKoalas){
-        console.log(`Dolphins win the trophy (${avgDolphins} vs. ${avgKoalas})`);
-    } else if(avgKoalas >= 2*avgDolphins) {
-        console.log(`Koalas win the trophy(${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log('No one wins the trophy');
-    }
+// function checkWinner(avgDolphins,avgKoalas){
+//     if(avgDolphins >= 2 * avgKoalas){
+//         console.log(`Dolphins win the trophy (${avgDolphins} vs. ${avgKoalas})`);
+//     } else if(avgKoalas >= 2*avgDolphins) {
+//         console.log(`Koalas win the trophy(${avgKoalas} vs. ${avgDolphins})`);
+//     } else {
+//         console.log('No one wins the trophy');
+//     }
 
+// }
+// checkWinner(averageDolphins,averageKoalas);
+
+//coding challenge 2
+function calcTip (bill) {
+    return bill >= 50 && bill <= 300 ? bill = bill * 0.15 : bill = bill * 0.2; 
 }
-checkWinner(averageDolphins,averageKoalas);
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]) ];
+
+console.log(bills, tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
