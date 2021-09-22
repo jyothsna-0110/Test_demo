@@ -116,14 +116,51 @@ else{
 // checkWinner(averageDolphins,averageKoalas);
 
 //coding challenge 2
-function calcTip (bill) {
-    return bill >= 50 && bill <= 300 ? bill = bill * 0.15 : bill = bill * 0.2; 
+// function calcTip (bill) {
+//     return bill >= 50 && bill <= 300 ? bill = bill * 0.15 : bill = bill * 0.2; 
+// }
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]) ];
+
+// console.log(bills, tips);
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(total);
+
+//coding challenge 3
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    weight: 78,
+    height: 1.69,
+    calcBMI: function() {
+       this.bmi = this.weight/(this.height * this.height);
+       return this.bmi;
+    }
+
+};
+mark.calcBMI();
+console.log(mark.bmi);
+
+const john = {
+    firstName: 'John',
+    lastName:'Smith',
+    weight: 92,
+    height: 1.55,
+    calcBMI: function() {
+       this.bmi = this.weight/(this.height** 2);
+       return this.bmi;
+    }
+};
+john.calcBMI();
+console.log(john.bmi);
+
+console.log(mark.calcBMI() > john.calcBMI() ? `${mark.firstName} ${mark['lastName']}'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${john.lastName}'s ${john.calcBMI()}!`:`${john.firstName} ${john['lastName']}'s BMI (${john.calcBMI()}) is higher than ${mark.firstName} ${mark.lastName}'s ${mark.calcBMI()}!`);
+
+if(mark.bmi > john.bmi) {
+    console.log(`${mark.firstName} ${mark['lastName']}'s BMI (${mark.calcBMI()}) is higher than ${john.firstName} ${john.lastName}'s ${john.calcBMI()}!`);
+} else if(john.bmi > mark.bmi) {
+    console.log(`${john.firstName} ${john['lastName']}'s BMI (${john.calcBMI()}) is higher than ${mark.firstName} ${mark.lastName}'s ${mark.calcBMI()}!`);
 }
-
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2]) ];
-
-console.log(bills, tips);
-
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(total);

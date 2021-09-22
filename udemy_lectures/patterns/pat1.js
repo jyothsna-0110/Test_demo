@@ -1,6 +1,9 @@
-let i, j;
-for(i=1; i <= 5; i++) {
-    for(j=1; j <= 5; j++) {
+// simple patterns
+
+let i, j, rows;
+rows = Number(prompt('Enter number of rows'));
+for(i=1; i <= rows; i++) {
+    for(j=1; j <= rows; j++) {
         document.write(j);
     }
   document.write('<br>');
@@ -8,7 +11,7 @@ for(i=1; i <= 5; i++) {
 
 document.write('<br>');
 
-for(i=1; i <= 5; i++) {
+for(i=1; i <= rows; i++) {
     for(j=1; j <= i; j++) {
         document.write(j);
     }
@@ -17,8 +20,8 @@ for(i=1; i <= 5; i++) {
 
 document.write('<br>');
 
-for(i=1; i <= 5; i++) {
-    for(j=1; j <= 5; j++ ) {
+for(i=1; i <= rows; i++) {
+    for(j=1; j <= rows; j++ ) {
         document.write('*');
     }
     document.write('<br>');
@@ -26,10 +29,12 @@ for(i=1; i <= 5; i++) {
 
 document.write('<br>');
 
-for(i=1; i <= 5; i++) {
+for(i=1; i <= rows; i++) {
     for(j=1; j <= i; j++) {
         document.write('*');
     }
     document.write('<br>');
 }
+
+document.write('<br>');
 

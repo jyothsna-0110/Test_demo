@@ -5,9 +5,10 @@ temp = num;
 
 while(num > 0) {
     rem = num % 10;
-    num = parseInt(num / 10);
     final = final * 10 + rem; 
-}
+
+    num = parseInt(num / 10);
+}   
 
 if(final == temp) {
     console.log(`${temp}  is a PALINDROME !!`);
